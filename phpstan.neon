@@ -1,0 +1,16 @@
+parameters:
+    level: 8
+    paths:
+        - src
+    tmpDir: build/phpstan
+    checkOctaneCompatibility: true
+    checkBenevolentUnionTypes: true
+    checkUninitializedProperties: true
+    checkTooWideReturnTypesInProtectedAndPublicMethods: true
+    checkImplicitMixed: true
+    
+    ignoreErrors:
+        - '#Unsafe usage of new static#'
+        
+    excludePaths:
+        - 'src/stubs'
